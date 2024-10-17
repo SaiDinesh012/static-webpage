@@ -1,0 +1,197 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f8f9;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+.logo {
+    color: #0066d1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.search-bar {
+    flex-grow:1;
+    margin: 0 2rem;
+    position: relative;
+}
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.search-bar::after {
+    content: "🔍";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
+.recommendations {
+    flex: 1;
+    background-image: url('https://img.freepik.com/premium-vector/couple-shaking-hands-with-house-building-contractor_533410-4337.jpg');
+    
+}
+.recommendations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 30px;
+}
+.intermediate-section {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.recommendations p {
+    color:black;
+    margin-bottom: 1rem;
+  
+}
+.sign-in-btn {
+    background-color: white;
+    color: #0066d1;
+    border: 1px solid #0066d1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-left: auto;
+    width: 300px;
+}
+.home-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    background-image: url('https://thumbs.dreamstime.com/z/happy-family-house-parents-kid-standing-front-dream-modern-residential-houses-89065879.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.home-card h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+.home-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+.recommendation-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.recommendation-tag {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.recommendation-tag::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.recommendation-tag.budget::before {
+    background-color: #1e8e3e;
+}
+.recommendation-tag.location::before {
+    background-color: #ff6d00;
+}
+.action-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.action-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.action-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.action-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.action-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.action-btn {
+    background-color: #0066d1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer {
+    background-color:grey;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.footer-links a {
+    color: #0066d1;
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+.footer p {
+    color: #666;
+    line-height: 1.5;
+}
